@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kim 的媒体库 | 小说·漫画·动漫</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">kim 的媒体库</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#novels">小说</a></li>
+                <li><a href="#comics">漫画</a></li>
+                <li><a href="#anime">动漫</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索作品...">
+                <button id="searchBtn">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>欢迎来到我的媒体库</h1>
+                <p>收藏我喜欢的小说、漫画和动漫</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="novelCount">0</span>
+                        <span class="stat-label">小说</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="comicCount">0</span>
+                        <span class="stat-label">漫画</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="animeCount">0</span>
+                        <span class="stat-label">动漫</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="novels" class="content-section">
+            <div class="section-header">
+                <h2>📖 小说</h2>
+                <a href="content/novels/index.html" class="view-all">查看全部 →</a>
+            </div>
+            <div class="content-grid" id="novelGrid"></div>
+        </section>
+
+        <section id="comics" class="content-section">
+            <div class="section-header">
+                <h2>🎨 漫画</h2>
+                <a href="content/comics/index.html" class="view-all">查看全部 →</a>
+            </div>
+            <div class="content-grid" id="comicGrid"></div>
+        </section>
+
+        <section id="anime" class="content-section">
+            <div class="section-header">
+                <h2>🎬 动漫</h2>
+                <a href="content/anime/index.html" class="view-all">查看全部 →</a>
+            </div>
+            <div class="content-grid" id="animeGrid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 kim 的媒体库 · 用爱发电</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
